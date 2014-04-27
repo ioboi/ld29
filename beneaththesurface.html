@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Beneath The Surface</title>
+    <link rel="stylesheet" href="beneaththesurface.css">
+  </head>
+  <body>
+    <center>
+      <canvas id="board" width="640" height="480"></canvas>
+      <div style="width:50%;float:left;">
+        <p style="text-align:left;">
+        This game was made in 48 hours for Ludum Dare.<br>
+        Programmed in dart, using the 2D-Context of the Canvas-Element<br>
+        Mady by Yannik Dällenbach.<br>
+        See <a href="http://www.ludumdare.com/">Ludum Dare</a> fore more of this!<br>
+      </p>
+      </div>
+      <div style="width:50%;float:right;text-align:left;">
+        <strong>Instructions</strong>
+        <p>
+         Place mines on the surface. Each mine costs 10$.<br>
+         Change the drill-direction by clicking on the drill.<br>
+         You can not drill through stone or another driller!!! (The game does not end)<br>
+         Pause the game at anytime by hitting spacebar.<br>
+         UP/DOWN = W/S<br>
+         Smaragds give 2 or 4$.<br>
+         Diamonds give 5 or 10$. <br>
+         The game ends if you are hitting the bedrock or all driller are stuck and you don't have enough money<br>
+        </p>
+      </div>
+    </center>
+    
+    <script type="application/dart" src="beneaththesurface.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
