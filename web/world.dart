@@ -491,6 +491,7 @@ class World {
       this.money = 10;
       this.totalValue = 0;
       this.drillends.clear();
+      this.tiles = new List(this.w*this.h);
       this.drillers.clear();
       this.emitters.clear();
       this.diamonds.clear();
