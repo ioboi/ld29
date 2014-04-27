@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=VT323);
+
+body {
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 15px;
+}
+
+h1, p {
+  color: #333;
+}
+
+#sample_container_id {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#sample_text_id {
+  font-size: 24pt;
+  text-align: center;
+  margin-top: 140px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+canvas {
+    image-rendering: optimizeSpeed;             // Older versions of FF
+    image-rendering: -moz-crisp-edges;          // FF 6.0+
+    image-rendering: -webkit-optimize-contrast; // Webkit
+                                                //  (Safari now, Chrome soon)
+    image-rendering: -o-crisp-edges;            // OS X & Windows Opera (12.02+)
+    image-rendering: optimize-contrast;         // Possible future browsers.
+    -ms-interpolation-mode: nearest-neighbor;   // IE
+}
